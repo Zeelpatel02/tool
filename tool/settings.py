@@ -28,7 +28,9 @@ SECRET_KEY = 'django-insecure-#27wnp#78y04az0k6hmpma89e7iqf8b&1oww+358aw*k15zyz1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','zeel02.herokuapp.com']
+ALLOWED_HOSTS = [
+    'rehome-pdf-app.herokuapp.com'
+]
 
 
 # Application definition
@@ -130,6 +132,8 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 
+MEDIA_ROOT = 'media'
+MEDIA_URL = '/media/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
